@@ -1,8 +1,10 @@
-package com.dybcatering.diabenapp;
+package com.dybcatering.diabenapp.Login;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+
+import com.dybcatering.diabenapp.Inicio.PrincipalActivity;
 
 import java.util.HashMap;
 

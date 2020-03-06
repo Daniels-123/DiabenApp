@@ -1,4 +1,4 @@
-package com.dybcatering.diabenapp;
+package com.dybcatering.diabenapp.Inicio;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.dybcatering.diabenapp.R;
+
 public class Promociones extends Fragment implements NavigationView.OnNavigationItemSelectedListener {
     View myView;
 
@@ -19,17 +21,7 @@ public class Promociones extends Fragment implements NavigationView.OnNavigation
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         myView = inflater.inflate(R.layout.primer_fragment, container, false);
-        Button btn = (Button) myView.findViewById(R.id.restaurantes);
-        Button inv = (Button) myView.findViewById(R.id.invi);
-        inv.setClickable(false);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent i = new Intent(getActivity(), SubPrimerActivity.class);
-                startActivity(i);
-            }
-        });
 
 
         return myView;

@@ -1,4 +1,4 @@
-package com.dybcatering.diabenapp;
+package com.dybcatering.diabenapp.Inicio;
 
 import android.app.FragmentManager;
 import android.content.Intent;
@@ -13,6 +13,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.dybcatering.diabenapp.Login.LoginActivity;
+import com.dybcatering.diabenapp.Login.SessionManager;
+import com.dybcatering.diabenapp.R;
 
 public class PrincipalActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -39,7 +43,7 @@ public class PrincipalActivity extends AppCompatActivity
                // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                  //       .setAction("Action", null).show();
 
-                startActivity(new Intent(PrincipalActivity.this,LoginActivity.class));
+                startActivity(new Intent(PrincipalActivity.this, LoginActivity.class));
 
             }
         });

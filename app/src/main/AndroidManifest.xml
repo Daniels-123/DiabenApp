@@ -11,15 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeRegist">
-        <activity android:name="com.dybcatering.diabenapp.HomeActivity"></activity>
+        <activity android:name="com.dybcatering.diabenapp.Login.HomeActivity"></activity>
         <activity
-            android:name="com.dybcatering.diabenapp.RegisterActivity"
+            android:name="com.dybcatering.diabenapp.Login.RegisterActivity"
             android:theme="@style/AppThemeRegist" />
         <activity
-            android:name="com.dybcatering.diabenapp.LoginActivity"
+            android:name="com.dybcatering.diabenapp.Login.LoginActivity"
             android:theme="@style/AppThemeLogin" />
         <activity
-            android:name="com.dybcatering.diabenapp.PrincipalActivity"
+            android:name="com.dybcatering.diabenapp.Inicio.PrincipalActivity"
             android:label="@string/title_activity_principal"
             android:theme="@style/AppThemeRegist.NoActionBar">
             <intent-filter>
@@ -28,7 +28,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dybcatering.diabenapp.SubPrimerActivity"></activity>
+        <activity android:name="com.dybcatering.diabenapp.Inicio.SubPrimerActivity"></activity>
     </application>
 
 </manifest>

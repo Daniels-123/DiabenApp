@@ -1,4 +1,4 @@
-package com.dybcatering.diabenapp;
+package com.dybcatering.diabenapp.Login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,6 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.dybcatering.diabenapp.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -37,8 +38,6 @@ public class RegisterActivity extends AppCompatActivity {
         loading = findViewById(R.id.loading);
         name = findViewById(R.id.name);
         email = findViewById(R.id.email);
-        password = findViewById(R.id.password);
-        c_password = findViewById(R.id.c_password);
         btn_regist = findViewById(R.id.btn_regist);
 
         btn_regist.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         final String name = this.name.getText().toString().trim();
         final String email = this.email.getText().toString().trim();
-        final String password = this.password.getText().toString().trim();
+        //final String password = this.password.getText().toString().trim();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL_REGIST,
                 new Response.Listener<String>() {
@@ -94,7 +93,7 @@ public class RegisterActivity extends AppCompatActivity {
                 Map<String, String> params = new HashMap<>();
                 params.put("name", name);
                 params.put("email", email);
-                params.put("password", password);
+              //  params.put("password", password);
                 return params;
             }
         };
