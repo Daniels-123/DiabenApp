@@ -1,4 +1,4 @@
-package com.digitalandroidweb.androidregisterandlogin;
+package com.dybcatering.diabenapp;
 
 import android.app.Fragment;
 import android.content.Intent;

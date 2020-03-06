@@ -1,4 +1,4 @@
-package com.digitalandroidweb.androidregisterandlogin;
+package com.dybcatering.diabenapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

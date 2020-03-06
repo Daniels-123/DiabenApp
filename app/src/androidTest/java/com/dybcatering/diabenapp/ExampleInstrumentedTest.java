@@ -1,4 +1,4 @@
-package com.digitalandroidweb.androidregisterandlogin;
+package com.dybcatering.diabenapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

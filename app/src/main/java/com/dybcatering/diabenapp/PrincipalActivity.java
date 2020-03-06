@@ -1,9 +1,9 @@
-package com.digitalandroidweb.androidregisterandlogin;
+package com.dybcatering.diabenapp;
 
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,7 +13,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.*;
 
 public class PrincipalActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -24,8 +23,8 @@ public class PrincipalActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
 
 
-        sessionManager = new SessionManager(this);
-        sessionManager.checkLogin();
+     //   sessionManager = new SessionManager(this);
+      //  sessionManager.checkLogin();
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
@@ -36,10 +35,11 @@ public class PrincipalActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sessionManager.logout();
+               // sessionManager.logout();
                // Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                  //       .setAction("Action", null).show();
 
+                startActivity(new Intent(PrincipalActivity.this,LoginActivity.class));
 
             }
         });

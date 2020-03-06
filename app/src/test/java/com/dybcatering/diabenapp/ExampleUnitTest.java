@@ -1,4 +1,4 @@
-package com.digitalandroidweb.androidregisterandlogin;
+package com.dybcatering.diabenapp;
 
 import org.junit.Test;
 

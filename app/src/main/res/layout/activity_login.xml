@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorPrimary"
+    android:background="#fff"
     android:paddingLeft="30dp"
     android:paddingRight="30dp"
     android:paddingTop="80dp"
@@ -12,7 +12,7 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:src="@drawable/logo"
+        android:src="@drawable/union"
         android:layout_marginBottom="30dp"
         android:layout_width="match_parent"
         android:layout_height="100dp" />
@@ -21,10 +21,11 @@
         android:id="@+id/layoutemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary2"
         android:layout_below="@id/logo">
         <EditText
             android:inputType="textEmailAddress"
-            android:hint="Email"
+            android:hint="Usuario"
             android:textColor="@color/colorText"
             android:id="@+id/email"
             android:layout_width="match_parent"
@@ -36,10 +37,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layoutemail"
+        android:backgroundTint="@color/colorPrimary2"
         app:passwordToggleEnabled="true">
         <EditText
             android:inputType="textPassword"
-            android:hint="Password"
+            android:hint="Contraseña"
             android:textColor="@color/colorText"
             android:id="@+id/password"
             android:layout_width="match_parent"
@@ -59,8 +61,8 @@
         android:layout_below="@id/layoutpassword"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/colorPrimary2"
-        android:text="LOGIN"
-        android:textColor="@color/colorText"
+        android:text="Iniciar Sesión"
+        android:textColor="#fff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -68,10 +70,11 @@
         android:id="@+id/link_regist"
         android:layout_marginBottom="20dp"
         android:gravity="center"
-        android:textColor="@color/colorAccent"
-        android:text="Register"
+        android:textColor="@color/colorPrimaryDark2"
+        android:text="Registrarse"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="18sp"/>
 
 </RelativeLayout>

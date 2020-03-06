@@ -1,4 +1,4 @@
-package com.digitalandroidweb.androidregisterandlogin;
+package com.dybcatering.diabenapp;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -50,17 +50,10 @@ public class LoginActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String mEmail = email.getText().toString().trim();
-                String mPass = password.getText().toString().trim();
-
-                if (!mEmail.isEmpty() || !mPass.isEmpty()) {
-                    Login(mEmail, mPass);
-                } else {
-                    email.setError("Please insert email");
-                    password.setError("Please insert password");
-                }
+                startActivity(new Intent(LoginActivity.this, PrincipalActivity.class));
             }
         });
+
 
         link_regist.setOnClickListener(new View.OnClickListener() {
             @Override
